@@ -68,16 +68,16 @@ class Main {
 
         switch (numero)
         {
-            case 1: return "I";
-            case 2: return "II";
-            case 3: return "III";
-            case 4: return "iV";
-            case 5: return "V";
-            case 6: return  "VI";
-            case 7: return  "VII";
-            case 8: return  "VIII";
-            case 9: return "IX";
-            case 10: return "X";
+            case 1: return " 1=I";
+            case 2: return " 2=II";
+            case 3: return " 3=III";
+            case 4: return " 4=IV";
+            case 5: return " 5=V";
+            case 6: return  " 6=VI";
+            case 7: return  " 7=VII";
+            case 8: return  " 8=VIII";
+            case 9: return " 9=IX";
+            case 10: return " 10=X";
         }
             return"Numero Invalido";
 
