@@ -36,31 +36,31 @@ class Main {
         Integer Produto23=658;
         Integer Produto24=671;
         Integer Produto25=944;
-
-
-
+        
 
 
         System.out.println("Ola "+Cliente+" seu saldo é: "+Saldo);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Categorias:");
-        System.out.println(Categoria1+" :1");
-        System.out.println(Categoria2+" :2");
-        System.out.println(Categoria3+" :3");
-        System.out.println(Categoria4+" :4");
-        System.out.println(Categoria5+" :5");
+        System.out.println("1 - "+Categoria1);
+        System.out.println("2 - "+Categoria2);
+        System.out.println("3 - "+Categoria3);
+        System.out.println("4 - "+Categoria4);
+        System.out.println("5 - "+Categoria5);
         System.out.println("Escolha Sua Categoria:");
 
 
 
-        Integer entrada = scanner.nextInt();
-        System.out.println("Produtos"+"\n"+categoria1(entrada));
-//        Scanner scanner = new Scanner(System.in);
-//        Integer entrada2= scanner.nextInt();
-//        System.out.println("")
+       Integer entrada = scanner.nextInt();
+       System.out.println("Produtos"+"\n"+categoria1(entrada));
+       Scanner scanner2 = new Scanner(System.in);
+       System.out.println("Escolha seu Produto:");
+       Integer entrada4 = scanner.nextInt();
+       }
 
 
-    }
+
+//    }
 //    static String escolhacategoria(int categoria) {
 //        switch (categoria) {
 //            case 1:
@@ -103,11 +103,6 @@ class Main {
         Integer Produto24=671;
         Integer Produto25=944;
         Integer Produto26=874;
-
-
-
-
-
 
         switch (produto) {
             case 1:
