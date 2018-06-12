@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Scanner;
 
 class Main {
@@ -12,7 +11,7 @@ class Main {
         String Categoria3="armas";
         String Categoria4="bombas";
         String Categoria5="Acessorios";
-        Integer Produto1=500;
+        double Produto1=500;
         Integer Produto2=200;
         Integer Produto3=300;
         Integer Produto4=50;
@@ -36,7 +35,7 @@ class Main {
         Integer Produto23=658;
         Integer Produto24=671;
         Integer Produto25=944;
-        
+
 
 
         System.out.println("Ola "+Cliente+" seu saldo é: "+Saldo);
@@ -51,31 +50,29 @@ class Main {
 
 
 
-       Integer entrada = scanner.nextInt();
-       System.out.println("Produtos"+"\n"+categoria1(entrada));
-       Scanner scanner2 = new Scanner(System.in);
-       System.out.println("Escolha seu Produto:");
-       Integer entrada4 = scanner.nextInt();
-       }
+        Integer categoria = scanner.nextInt();
+        System.out.println("categoria Selecionada: "+categoria+"\nProdutos:");
+        System.out.println(categoria1(categoria));
+        System.out.println("Escolha seu Porduto:");
+        Integer produto = scanner.nextInt();
 
 
-
-//    }
-//    static String escolhacategoria(int categoria) {
-//        switch (categoria) {
-//            case 1:
-//                return "Categoria 1.";
-//            case 2:
-//                return "Categoria 2.";
-//            case 3:
-//                return "Categoria 3.";
-//            case 4:
-//                return "Categoria 4.";
-//            case 5:
-//                return "Categoria 5.";
+//      if (categoria==1);
+//        {
+//            System.out.println("Produtos:\n" + "Calça " + Produto1 + "\n" + "Camisa " + Produto2 + "\n" + "Blusa " + Produto3 + "\n" + "shorts " + Produto4 + "\n" + "Moletom " + Produto6);
 //        }
-//
-//       return"Categoria Invalida!";}
+//      if (categoria==2)  {
+//            System.out.println("lol");
+//        }
+
+  }
+//       System.out.println("Produtos"+"\n"+categoria1(entrada));
+//       Scanner scanner2 = new Scanner(System.in);
+//       System.out.println("Escolha seu Produto:");
+//       Integer entrada4 = scanner.nextInt();
+
+
+
 
     static String categoria1(int produto) {
         Integer Produto1=500;
@@ -106,19 +103,40 @@ class Main {
 
         switch (produto) {
             case 1:
-                return "Calça "+Produto1+"\n"+"Camisa "+Produto2+"\n"+"Blusa "+Produto3+"\n"+"shorts "+Produto4+"\n"+"Moletom "+Produto6;
+                return "1 - Calça "+Produto1+"\n"+"2 - Camisa "+Produto2+"\n"+"3 - Blusa "+Produto3+"\n"+"4 - shorts "+Produto4+"\n"+"5 - Moletom "+Produto6;
             case 2:
-                return "Tenis "+Produto7+"\n"+"Sapato Social "+Produto8+"\n"+"Bota "+Produto9+"\n"+"Tamanco "+Produto10+"\n"+"chuteira "+Produto11;
+                return "6 - Tenis "+Produto7+"\n"+"7 - Sapato Social "+Produto8+"\n"+"8 - Bota "+Produto9+"\n"+"9 - Tamanco "+Produto10+"\n"+"10 - chuteira "+Produto11;
             case 3:
-                return "Faca "+Produto12+"\n"+"Pistola "+Produto13+"\n"+"Submetrlhadora "+Produto14+"\n"+"Fusil "+Produto15+"\n"+"Revolver "+Produto16;
+                return "11 - Faca "+Produto12+"\n"+"12 - Pistola "+Produto13+"\n"+"13 - Submetrlhadora "+Produto14+"\n"+"14 - Fusil "+Produto15+"\n"+"15 - Revolver "+Produto16;
             case 4:
-                return "Granada de mão "+Produto17+"\n"+"Granada de fumaça "+Produto18+"\n"+"Granada de efeito moral "+Produto19+"\n"+"Molotov "+Produto20+"\n"+"Bomba Atomica "+Produto21;
+                return "16 - Granada de mão "+Produto17+"\n"+"17 - Granada de fumaça "+Produto18+"\n"+"18 - Granada de efeito moral "+Produto19+"\n"+"19 - Molotov "+Produto20+"\n"+"20 - Bomba Atomica "+Produto21;
             case 5:
-                return "Helm +13 "+Produto22+"\n"+"Armor+13 "+Produto23+"\n"+"Gloves +13 "+Produto24+"\n"+"Pantes +13 "+Produto25+"\n"+"Boots +13 "+Produto26;
+                return "21 - Helm +13 "+Produto22+"\n"+"22 - Armor+13 "+Produto23+"\n"+"23 - Gloves +13 "+Produto24+"\n"+"24 - Pantes +13 "+Produto25+"\n"+"25 - Boots +13 "+Produto26;
         }
 
         return"Categoria Invalida!";}
+
+
+
+
     }
+//    }
+//    static String escolhacategoria(int categoria) {
+//        switch (categoria) {
+//            case 1:
+//                return "Categoria 1.";
+//            case 2:
+//                return "Categoria 2.";
+//            case 3:
+//                return "Categoria 3.";
+//            case 4:
+//                return "Categoria 4.";
+//            case 5:
+//                return "Categoria 5.";
+//        }
+//
+//       return"Categoria Invalida!";}
+
 
 //    static Integer osprodutosdopai(int Produtos) {
 //
