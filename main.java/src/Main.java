@@ -6,7 +6,7 @@ class Main {
 
         String Cliente="Cliente";
         Integer Saldo= 1500;
-        Integer resultado;
+        Integer resultado=0;
         String Categoria1="Roupas";
         String Categoria2="Sapatos";
         String Categoria3="armas";
@@ -52,9 +52,9 @@ class Main {
        System.out.println("Produtos\n"+categoria1(entrada));
        Scanner lol = new Scanner(System.in);
        Integer loll= scanner.nextInt();
-//       System.out.println(testest(loll));
+       Integer entrada2=scanner.nextInt();
+       System.out.println("lol"+Testest(entrada2));
        System.out.println("Escolha seu Produto:");
-//       System.out.println(resultado);
 
        }
 
@@ -65,7 +65,55 @@ class Main {
             case 1:
                 preco = 500;
             case 2:
-                preco = 500;
+                preco = 200;
+            case 3:
+                preco = 300;
+            case 4:
+                preco = 50;
+            case 5:
+                preco = 228;
+            case 6:
+                preco = 255;
+            case 7:
+                preco = 253;
+            case 8:
+                preco = 483;
+            case 9:
+                preco = 28;
+            case 10:
+                preco = 39;
+            case 11:
+                preco = 983;
+            case 12:
+                preco = 274;
+            case 13:
+                preco = 463;
+            case 14:
+                preco = 952;
+            case 15:
+                preco = 753;
+            case 16:
+                preco = 297;
+            case 17:
+                preco = 964;
+            case 18:
+                preco = 872;
+            case 19:
+                preco = 365;
+            case 20:
+                preco = 147;
+            case 21:
+                preco = 589;
+            case 22:
+                preco = 658;
+            case 23:
+                preco = 671;
+            case 24:
+                preco = 584;
+            case 25:
+                preco = 944;
+
+
 
         }
         return preco;
@@ -76,6 +124,7 @@ class Main {
         Integer preco = this.getPrecoProduto(escolhaproduto);
         Integer resultado = saldo - preco;
         return resultado;
+//        while ( true )  (resultado > 0){}
 
 //        Integer Produto1 = 500;
 //        Integer Produto2 = 200;
@@ -259,7 +308,7 @@ class Main {
     }
 
 
-        static String categoria1 ( int produto){
+        public String categoria1 ( int produto){
             Integer Produto1 = 500;
             Integer Produto2 = 200;
             Integer Produto3 = 300;
@@ -398,10 +447,10 @@ class Main {
 //        System.out.println("Conversor de numeros Romanos ;D");
 //        System.out.println("Insira o Número Decimal:");
 //        Integer entrada = scanner.nextInt();
-////        System.out.println(convertdec(entrada));
-////        for (int i=0;i<=10;i++){
-////           System.out.println(convertdec(entrada));
-////        }
+//        System.out.println(convertdec(entrada));
+//        for (int i=0;i<=10;i++){
+//           System.out.println(convertdec(entrada));
+//        }
 //        int i=1;
 //        while (i <= 10){
 //
