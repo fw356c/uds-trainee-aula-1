@@ -5,8 +5,7 @@ class Main {
         System.out.println("Bem vindo ao OutFit do Torinha!");
 
         String Cliente="Cliente";
-        Integer Saldo= 1500;
-        Integer resultado=0;
+        Integer Saldo=1500;
         String Categoria1="Roupas";
         String Categoria2="Sapatos";
         String Categoria3="armas";
@@ -38,6 +37,8 @@ class Main {
         Integer Produto24=584;
         Integer Produto25=944;
 
+
+
         System.out.println("Ola "+Cliente+" seu saldo é: "+Saldo);
         Scanner scanner = new Scanner(System.in);
         System.out.println("Categorias:");
@@ -50,68 +51,116 @@ class Main {
 
        Integer entrada = scanner.nextInt();
        System.out.println("Produtos\n"+categoria1(entrada));
-       Scanner lol = new Scanner(System.in);
        Integer loll= scanner.nextInt();
-       Integer entrada2=scanner.nextInt();
-       System.out.println("lol"+Testest(entrada2));
-       System.out.println("Escolha seu Produto:");
+//       System.out.println(Testest(loll));
+       Integer subtotal=Testest(loll);
+       if (Testest(loll)==0){
+           System.out.println("saldo Insufuciente!");
+       }
+
+
+
+
+
+        while (Testest(loll) > 0){
+           System.out.println("Seu Saldo: "+Testest(loll));
+            System.out.println("Categorias:");
+            System.out.println("1 - "+Categoria1);
+            System.out.println("2 - "+Categoria2);
+            System.out.println("3 - "+Categoria3);
+            System.out.println("4 - "+Categoria4);
+            System.out.println("5 - "+Categoria5);
+            System.out.println("Escolha Sua Categoria:");
+
+            Integer entrada2 = scanner.nextInt();
+            System.out.println("Produtos\n"+categoria1(entrada2));
+            Integer lol2= scanner.nextInt();
+            System.out.println(Testest(lol2));
+            Integer saldo2= Saldo-Testest(lol2);
+            System.out.println(saldo2);
+        }
 
        }
 
 
-    public Integer getPrecoProduto(int codigo) {
-        Integer preco = 0;
+    public static Integer getPrecoProduto(int codigo) {
+        Integer preco=0 ;
         switch (codigo) {
             case 1:
                 preco = 500;
+                break;
             case 2:
                 preco = 200;
+                break;
             case 3:
                 preco = 300;
+                break;
             case 4:
                 preco = 50;
+                break;
             case 5:
                 preco = 228;
+                break;
             case 6:
                 preco = 255;
+                break;
             case 7:
                 preco = 253;
+                break;
             case 8:
                 preco = 483;
+                break;
             case 9:
                 preco = 28;
+                break;
             case 10:
                 preco = 39;
+                break;
             case 11:
                 preco = 983;
+                break;
             case 12:
                 preco = 274;
+                break;
             case 13:
                 preco = 463;
+                break;
             case 14:
                 preco = 952;
+                break;
             case 15:
                 preco = 753;
+                break;
             case 16:
                 preco = 297;
+                break;
             case 17:
                 preco = 964;
+                break;
             case 18:
                 preco = 872;
+                break;
             case 19:
                 preco = 365;
+                break;
             case 20:
                 preco = 147;
+                break;
             case 21:
                 preco = 589;
+                break;
             case 22:
                 preco = 658;
+                break;
             case 23:
                 preco = 671;
+                break;
             case 24:
                 preco = 584;
+                break;
             case 25:
                 preco = 944;
+                break;
 
 
 
@@ -119,12 +168,13 @@ class Main {
         return preco;
     }
 
-    public Integer Testest(int escolhaproduto) {
+    public static Integer Testest(int escolhaproduto) {
         Integer saldo = 1500;
-        Integer preco = this.getPrecoProduto(escolhaproduto);
+        Integer preco = getPrecoProduto(escolhaproduto);
         Integer resultado = saldo - preco;
         return resultado;
-//        while ( true )  (resultado > 0){}
+
+
 
 //        Integer Produto1 = 500;
 //        Integer Produto2 = 200;
@@ -308,7 +358,7 @@ class Main {
     }
 
 
-        public String categoria1 ( int produto){
+        public static String categoria1 ( int produto){
             Integer Produto1 = 500;
             Integer Produto2 = 200;
             Integer Produto3 = 300;
