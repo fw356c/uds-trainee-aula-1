@@ -54,16 +54,19 @@ class Main {
        Integer loll= scanner.nextInt();
 //       System.out.println(Testest(loll));
        Integer subtotal=Testest(loll);
-       if (Testest(loll)==0){
+       System.out.println(subtotal);
+       if (Testest(loll)<=0){
            System.out.println("saldo Insufuciente!");
+
        }
 
 
 
 
 
-        while (Testest(loll) > 0){
-           System.out.println("Seu Saldo: "+Testest(loll));
+
+        while (Testest(loll) >= 0){
+//            System.out.print("Seu Saldo: ");System.out.println();
             System.out.println("Categorias:");
             System.out.println("1 - "+Categoria1);
             System.out.println("2 - "+Categoria2);
@@ -75,9 +78,13 @@ class Main {
             Integer entrada2 = scanner.nextInt();
             System.out.println("Produtos\n"+categoria1(entrada2));
             Integer lol2= scanner.nextInt();
-            System.out.println(Testest(lol2));
-            Integer saldo2= Saldo-Testest(lol2);
+//            System.out.println(Testest(lol2));
+            Integer saldo2= Testest(lol2)-subtotal;
             System.out.println(saldo2);
+            if (saldo2 <=0)
+            {System.out.println("saldo Insufuciente!");
+            break;
+            }
         }
 
        }
@@ -527,5 +534,27 @@ class Main {
 //        return"Numero Invalido";
 //
 //
+//
+//    }
+//  exercicio 3
+//    public void PositivoNegativo (){
+//
+//        public static void main(String[] args) {    
+//
+//                               int n= 0;    
+//
+//                               if (n >=0){    
+//
+//                               System.out.println("O número”+ n +“é positivo");    
+//
+//                               }    
+//
+//                               else{    
+//
+//                               System.out.println("O número”+ n +“é negativo");    
+//
+//                               }    
+//
+//        }
 //
 //    }
